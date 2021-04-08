@@ -1,7 +1,8 @@
 #CXX=clang++
 CXX=g++
 
-CXXFLAGS= -O3 -Wall
+#CXXFLAGS= -O3 -Wall
+CXXFLAGS= -O3 -Wall -std=c++14 
 
 BINARIES=dataProj testDemog1 testDemog2
 
