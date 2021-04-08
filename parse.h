@@ -29,7 +29,7 @@ string getField(std::stringstream &ss);
 void consumeColumnNames(std::ifstream &myFile);
 
 //read from a CSV file (for a given data type) return a vector of the data
-std::vector<shared_ptr<demogData>> read_csv(std::string filename, typeFlag fileType);
+std::vector<shared_ptr<demogData> > read_csv(std::string filename, typeFlag fileType);
 
 // Read one line from a CSV file for county demographic data specifically
 shared_ptr<demogData> readCSVLineDemog(std::string theLine);

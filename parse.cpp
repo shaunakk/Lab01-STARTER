@@ -1,4 +1,5 @@
 #include <algorithm>
+#include <memory>
 /* helper routines to read out csv data */
 #include "parse.h"
 
@@ -68,9 +69,9 @@ shared_ptr<demogData> readCSVLineDemog(std::string theLine) {
 
 //read from a CSV file (for a given data type) return a vector of the data
 // DO NOT modify for lab01
-std::vector<shared_ptr<demogData>> read_csv(std::string filename, typeFlag fileType) {
+std::vector<shared_ptr<demogData> > read_csv(std::string filename, typeFlag fileType) {
     //the actual data
-    std::vector<shared_ptr<demogData>> theData;
+    std::vector<shared_ptr<demogData> > theData;
 
     // Create an input filestream
     std::ifstream myFile(filename);
