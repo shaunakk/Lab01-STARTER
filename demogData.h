@@ -1,3 +1,4 @@
+
 #ifndef DEMOG_H
 #define DEMOG_H
 
@@ -14,6 +15,7 @@ class demogData
 {
 public:
   demogData(string inN, string inS, double in65, double in18, double in5, double totBA, double totHS, int totPop14) : name(inN), state(inS), popOver65(in65), popUnder18(in18), popUnder5(in5), BAup(totBA), HSup(totHS), totalPopulation2014(totPop14){};
+  demogData(string inN, string inS, double in65, double in18, double in5, int totPop14) : name(inN), state(inS), popOver65(in65), popUnder18(in18), popUnder5(in5), totalPopulation2014(totPop14){};
 
   friend std::ostream &operator<<(std::ostream &out, const demogData &DD);
   string getState() const { return state; }
